@@ -7,26 +7,26 @@ const footerLinks = {
   Platform: [
     { label: "Overview", path: "/" },
     { label: "Security", path: "/security" },
-    { label: "Pricing", path: "/" },
-    { label: "Enterprise", path: "/" },
+    { label: "Pricing", path: "/pricing" },
+    { label: "Enterprise", path: "/contact" },
   ],
   Developers: [
     { label: "Onboarding", path: "/onboarding" },
-    { label: "API Reference", path: "/" },
-    { label: "SDKs", path: "/" },
-    { label: "Sandbox", path: "/" },
+    { label: "API Reference", path: "/onboarding" },
+    { label: "SDKs", path: "/onboarding" },
+    { label: "Sandbox", path: "/pricing" },
   ],
   Company: [
     { label: "About", path: "/" },
     { label: "Contact", path: "/contact" },
-    { label: "Careers", path: "/" },
+    { label: "Careers", path: "/contact" },
     { label: "Blog", path: "/" },
   ],
   Legal: [
     { label: "Privacy", path: "/" },
     { label: "Terms", path: "/" },
-    { label: "Compliance", path: "/" },
-    { label: "SLA", path: "/" },
+    { label: "Compliance", path: "/security" },
+    { label: "SLA", path: "/pricing" },
   ],
 };
 

@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Platform", path: "/" },
   { label: "Developers", path: "/onboarding" },
   { label: "Security", path: "/security" },
+  { label: "Pricing", path: "/pricing" },
   { label: "Contact", path: "/contact" },
 ];
 

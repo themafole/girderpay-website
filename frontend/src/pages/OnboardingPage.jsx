@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Terminal, Key, Code, TestTubeDiagonal, Rocket, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 const steps = [
   {
@@ -76,6 +77,11 @@ const girder = new GirderPay({
 export default function OnboardingPage() {
   return (
     <main data-testid="onboarding-page" className="pt-20 md:pt-24">
+      <SEOHead
+        title="Developer Onboarding"
+        description="From zero to live payments in six steps. Integrate GirderPay's API with SDKs in 6 languages, sandbox testing, and comprehensive documentation."
+        keywords="payment API integration, developer onboarding, SDK, sandbox, payment API docs, developer tools"
+      />
       {/* Header */}
       <section className="py-20 md:py-28 relative">
         <div className="absolute inset-0">

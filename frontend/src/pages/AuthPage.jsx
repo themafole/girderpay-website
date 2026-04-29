@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 function AuthCard({ mode }) {
   const [showPassword, setShowPassword] = useState(false);
@@ -144,6 +145,11 @@ export default function AuthPage() {
 
   return (
     <main data-testid="auth-page" className="pt-20 md:pt-24 min-h-screen">
+      <SEOHead
+        title="Sign In"
+        description="Access your GirderPay payment infrastructure dashboard. Enterprise-grade authentication for secure account access."
+        keywords="sign in, sign up, GirderPay login, payment dashboard, secure access"
+      />
       <section className="relative py-20 md:py-28 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">

@@ -7,6 +7,7 @@ import OnboardingPage from "@/pages/OnboardingPage";
 import SecurityVaultPage from "@/pages/SecurityVaultPage";
 import AuthPage from "@/pages/AuthPage";
 import ContactPage from "@/pages/ContactPage";
+import PricingPage from "@/pages/PricingPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/onboarding" element={<OnboardingPage />} />
           <Route path="/security" element={<SecurityVaultPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

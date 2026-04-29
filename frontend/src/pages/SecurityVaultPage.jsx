@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 const vaultFeatures = [
   {
@@ -64,6 +65,11 @@ const threatStats = [
 export default function SecurityVaultPage() {
   return (
     <main data-testid="security-vault-page" className="pt-20 md:pt-24">
+      <SEOHead
+        title="Security Vault"
+        description="Enterprise-grade security built into every layer. PCI DSS Level 1, 260+ fraud detectors, end-to-end encryption, SOC 2 Type II certified."
+        keywords="payment security, PCI DSS, fraud detection, encryption, SOC 2, compliance, data protection"
+      />
       {/* Hero */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0">

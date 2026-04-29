@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 const contactInfo = [
   {
@@ -50,6 +51,11 @@ export default function ContactPage() {
 
   return (
     <main data-testid="contact-page" className="pt-20 md:pt-24 min-h-screen">
+      <SEOHead
+        title="Contact"
+        description="Get in touch with GirderPay. Whether you're scaling to millions of transactions or laying the first girder, our team is ready to help."
+        keywords="contact GirderPay, payment support, enterprise sales, fintech contact"
+      />
       {/* Header */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">

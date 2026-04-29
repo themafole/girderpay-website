@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Shield, Globe, Code, Lock, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 /* ── Hero Section ── */
 function HeroSection() {
@@ -380,6 +381,11 @@ function CodePreviewSection() {
 export default function HomePage() {
   return (
     <main data-testid="home-page">
+      <SEOHead
+        title="Enterprise Payment Infrastructure"
+        description="Steel-forged payment foundations. Enterprise payment infrastructure built for global scale. Process billions with one API, every payment method, 160+ countries."
+        keywords="payment infrastructure, payment API, enterprise payments, fintech, payment processing, global payments"
+      />
       <HeroSection />
       <StatsSection />
       <FeaturesSection />
