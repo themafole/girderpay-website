@@ -1,8 +1,15 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const SITE_URL = "https://girderpay.com";
 
 export default function SEOHead({ title, description, keywords }) {
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    document.title = title ? `${title} | GirderPay` : "GirderPay | Enterprise Payment Infrastructure";
+    const fullTitle = title ? `${title} | GirderPay` : "GirderPay | Enterprise Payment Infrastructure";
+    document.title = fullTitle;
+    const canonicalUrl = `${SITE_URL}${pathname === "/" ? "" : pathname}`;
 
     const setMeta = (name, content) => {
       let el = document.querySelector(`meta[name="${name}"]`);
@@ -24,17 +31,36 @@ export default function SEOHead({ title, description, keywords }) {
       el.setAttribute("content", content);
     };
 
-    if (description) {
-      setMeta("description", description);
-      setOG("og:description", description);
-    }
+    const setLink = (rel, href) => {
+      let el = document.querySelector(`link[rel="${rel}"]`);
+      if (!el) {
+        el = document.createElement("link");
+        el.setAttribute("rel", rel);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("href", href);
+    };
+
+    // Standard meta
+    if (description) setMeta("description", description);
     if (keywords) setMeta("keywords", keywords);
-    if (title) {
-      setOG("og:title", `${title} | GirderPay`);
-    }
+
+    // Canonical
+    setLink("canonical", canonicalUrl);
+
+    // Open Graph
+    setOG("og:title", fullTitle);
+    if (description) setOG("og:description", description);
     setOG("og:type", "website");
     setOG("og:site_name", "GirderPay");
-  }, [title, description, keywords]);
+    setOG("og:url", canonicalUrl);
+
+    // Twitter Card
+    setMeta("twitter:card", "summary_large_image");
+    setMeta("twitter:site", "@girderpay");
+    setMeta("twitter:title", fullTitle);
+    if (description) setMeta("twitter:description", description);
+  }, [title, description, keywords, pathname]);
 
   return null;
 }
