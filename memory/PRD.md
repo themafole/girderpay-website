@@ -30,8 +30,10 @@ Generate a frontend project for GirderPay, a fintech startup. Aesthetic: Liquid-
 3. **Security Vault**: Threat stats, 6 feature cards, compliance framework grid, incident response section
 4. **Auth Page**: Glassmorphism Sign In/Sign Up cards with tab switcher (visual-only)
 5. **Contact Page**: Contact form + 4 info cards + enterprise support CTA
-6. **Navigation**: Sticky glassmorphism navbar with active link states, mobile menu
-7. **Footer**: CTA, 4-column link grid, system status indicator
+6. **Pricing Page**: 3 tiers (Construction $0/mo, Framework 1.2%+$0.20/txn, Infrastructure Custom), FAQ section, Enterprise CTA
+7. **Navigation**: Sticky glassmorphism navbar with 5 links + active states, mobile menu
+8. **Footer**: CTA, 4-column link grid, system status indicator
+9. **SEO**: Unique title, meta description, og:title, og:description on all 6 pages
 
 ## Test Results
 - 56/57 frontend assertions passed (98% success rate)
