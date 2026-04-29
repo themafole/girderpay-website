@@ -1,0 +1,104 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "domain": "Fintech Startup - Enterprise Infrastructure",
+  "colors": {
+    "background": "#030605",
+    "surface": "#08120F",
+    "primary": "#149d80",
+    "primary_hover": "#18cca6",
+    "accent": "#0c5c4b",
+    "text_primary": "#F2F5F4",
+    "text_secondary": "#A1B3AE",
+    "border": "rgba(20, 157, 128, 0.2)",
+    "glass_bg": "rgba(8, 18, 15, 0.5)",
+    "glass_border": "rgba(20, 157, 128, 0.15)"
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "IBM Plex Sans",
+    "mono_font": "JetBrains Mono",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl tracking-tighter font-light",
+      "h2": "text-3xl sm:text-4xl md:text-5xl tracking-tight font-normal",
+      "h3": "text-xl sm:text-2xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-[#A1B3AE]",
+      "mono": "text-sm font-mono tracking-widest uppercase text-[#149d80]"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 lg:px-12",
+    "section": "py-24 md:py-32 lg:py-40",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "card_padding": "p-8 md:p-12"
+  },
+  "surfaces_and_effects": {
+    "glassmorphism": "backdrop-blur-2xl bg-[#08120F]/60 border border-[#149d80]/20 shadow-[0_8px_32px_rgba(20,157,128,0.05)]",
+    "glassmorphism_heavy": "backdrop-blur-3xl bg-[#030605]/80 border border-[#149d80]/30 shadow-[0_0_40px_rgba(20,157,128,0.1)]",
+    "solid_surface": "bg-[#08120F] border border-[#149d80]/10",
+    "neon_glow_text": "drop-shadow-[0_0_8px_rgba(20,157,128,0.8)]",
+    "steel_gradient": "bg-gradient-to-br from-[#121A18] via-[#08120F] to-[#030605]"
+  },
+  "animations": {
+    "css_only_rules": "Strictly NO Framer Motion. Use pure CSS @keyframes and Tailwind transition utilities.",
+    "hover_state": "transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#149d80]/50 hover:shadow-[0_8px_24px_rgba(20,157,128,0.25)]",
+    "button_hover": "transition-all duration-300 ease-out hover:bg-[#18cca6] hover:shadow-[0_0_20px_rgba(20,157,128,0.5)]",
+    "custom_keyframes": "Add float, pulse-glow, and slide-up animations in index.css"
+  },
+  "components": [
+    {
+      "name": "Navigation",
+      "description": "Persistent top header. Glassmorphism effect (backdrop-blur-xl bg-[#030605]/80 border-b border-[#149d80]/20). Contains Logo, Nav Links, and persistent Sign In / Sign Up buttons."
+    },
+    {
+      "name": "Hero Section",
+      "description": "High-impact hero. Deep dark background with abstract glass image. Liquid-glass overlay. Massive typography emphasizing 'Industrial Foundations'. Teal primary CTA.",
+      "layout": "Grid cols-1 lg:grid-cols-2 with text on left and abstract visual on right or asymmetrical bento."
+    },
+    {
+      "name": "6-Step Developer Onboarding",
+      "description": "A vertical or bento-grid timeline connecting 6 steps. Visuals must resemble 'Steel Girders' (e.g., solid 2px borders acting as a spine). Include code blocks in JetBrains Mono inside glass panels."
+    },
+    {
+      "name": "Security Vault Showcase",
+      "description": "Feature section resembling a high-tech vault. Focus on '260+ Fraud Detectors' and '160+ Countries' metrics. Use heavy glassmorphism cards. Dark, moody, secure vibe."
+    },
+    {
+      "name": "Glassmorphism Auth Cards",
+      "description": "Visual-only showcase for Sign In / Sign Up. Extremely high blur panels (backdrop-blur-3xl). Can be placed in a side-by-side layout or floating as absolute elements in a showcase block."
+    },
+    {
+      "name": "Contact Page",
+      "description": "Enterprise-grade contact form. Nested inside a liquid-glass container. Inputs should have subtle teal borders on focus."
+    },
+    {
+      "name": "Footer",
+      "description": "Massive spacing (py-32). Dark steel gradient background. Large 'Let's Build' CTA and grid of links."
+    }
+  ],
+  "media": {
+    "logo": "https://customer-assets.emergentagent.com/job_975ab3f7-c0ed-49e5-a928-dadab99d0afa/artifacts/gi71ymg6_GIRDERPAY_WHITE_BACKGROUND_LOGO.png",
+    "hero_background": "https://images.unsplash.com/photo-1761078739436-ccee01f3d89c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxkYXJrJTIwYWJzdHJhY3QlMjBnbGFzcyUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc3NDI2ODk5fDA&ixlib=rb-4.1.0&q=85",
+    "security_vault_bg": "https://images.unsplash.com/photo-1558544956-15f3c317e06a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwbmVvbiUyMGRhdGElMjBkYXJrfGVufDB8fHx8MTc3NzQyNjg5OXww&ixlib=rb-4.1.0&q=85",
+    "developer_bg": "https://images.unsplash.com/photo-1543829285-a3b7157052a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzdGVlbCUyMGFyY2hpdGVjdHVyZSUyMGRhcmt8ZW58MHx8fHwxNzc3NDI2ODk5fDA&ixlib=rb-4.1.0&q=85",
+    "partner_logos": [
+      "https://images.unsplash.com/photo-1705988142466-e468bc654eeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwbG9nbyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Nzc0MjY4ODh8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1764344815160-0e2afc6939a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nbyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Nzc0MjY4ODh8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1622476524026-0965961bc7a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb21wYW55JTIwbG9nbyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Nzc0MjY4ODh8MA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install and configure 'Outfit' and 'IBM Plex Sans' fonts via Google Fonts in index.html.",
+    "Install 'JetBrains Mono' for code blocks.",
+    "Install lucide-react for iconography.",
+    "DO NOT USE Framer Motion. Add @keyframes to index.css for float, pulse, slide-up, etc. Use standard CSS classes.",
+    "Strictly adhere to the dark theme 'Jewel & Luxury' archetype using #149d80 teal accents over #030605 backgrounds.",
+    "Apply 'liquid-glass' effect heavily. Example: className='backdrop-blur-2xl bg-[#08120F]/60 border border-[#149d80]/20'.",
+    "Primary call to action buttons must use the #149d80 color and have a distinct glow on hover.",
+    "Copy should reflect industrial metaphors: Girders, Vaults, Steel Foundations, Enterprise Grade.",
+    "For the 6-Step Onboarding, use a timeline structure with vertical borders representing steel girders. Add numbers 01 to 06.",
+    "Ensure every single interactive element, form field, and button has a proper data-testid.",
+    "Make sure the navbar is sticky with high z-index and blurred background.",
+    "Images provided in the guidelines should be used with max overlay opacities (bg-black/40) so they remain visible."
+  ]
+}
